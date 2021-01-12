@@ -1,0 +1,274 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ /* css for my name, logo  and my job */
+#myname{
+    font-size: 40px;
+    color:magenta;
+}
+ /* first animation */
+#logo{
+   background :url("IMAGES/butterfly-png-logo-clipart.png") no-repeat center center/cover;
+    float: left;
+    height:80px;
+    width:65px;
+    border:none;
+   animation-name: animation1;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+} 
+@keyframes animation1 { 
+   from {
+      top: 0;
+      }
+   to {
+      top: 100px;
+       transform: rotate(100deg);
+   }
+   
+}
+  /* navbar */
+#navbar {
+    background-color:snow;
+    color:snow;
+    overflow: hidden;
+    /* position:fixed; */
+    grid-area:nav;
+ }
+ 
+ #navbar a {
+    color:magenta;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+   'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size:20px;
+ }
+ 
+ #navbar ul {
+    list-style: none;
+    float: right;
+ }
+ 
+ #navbar ul li {
+    float:left;
+ }
+ 
+ #navbar ul li a {
+    display: block;
+    padding: 20px;
+ }
+ 
+ #navbar ul li a:hover {
+    background-color: 
+    color:#0a043c;
+ }
+
+ #navbar .current{
+    background-color:aliceblue;
+    color: #bbbbbb;
+ }
+ 
+h1{
+    padding-top: 100px;
+    text-align: center;
+    font-style: italic;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color:honeydew;
+}
+/* second animation */
+h2 {
+    padding-top: 10px;
+    color:#bbbbbb;
+    text-align: center;
+   animation-name: animation2;
+   animation-duration: 3s;
+   animation-iteration-count:infinite ;
+   animation-timing-function: linear;
+    
+}
+@keyframes animation2 {
+   from {
+      top: 0;
+      color:l#bbbbbb;
+   }
+   to {
+      top: 100px;
+      color:magenta;
+   }
+}
+
+a {
+    text-decoration: none; 
+ } 
+
+#showcase{
+    background :url("IMAGES/img7.jpg") no-repeat center center/cover;
+    height: 700px;
+    grid-area:showcase;
+}
+.btn {
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size:18px;
+    color:#bbbbbb;
+    background-color:aliceblue;
+    padding: 13px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ .btn:hover {
+    background-color:#0a043c;
+ }
+ 
+ .btn-dark {
+    background-color: #0a043c;
+    color: #bbbbbb;
+ }
+ 
+ .btn-dark:hover {
+    background-color: #ffe3d8;
+    color: #0a043c;
+ }
+/* css for contact form */
+.contact{
+    background :url("IMAGES/img2.jpg") no-repeat center center/cover;;
+    height: 660px;
+    text-align: center;
+    font-size: 18px;
+    margin: center;
+    padding:15px;
+    border:none;
+    grid-area:contact;
+}
+
+.contact label{
+    color:#0a043c;
+}
+.contact button{
+    background-color:aliceblue;
+    border:2px solid #0a043c;
+}
+
+.contact input{
+   border:2px solid #0a043c;
+}
+
+.contact textarea{
+   border:2px solid #0a043c;
+}
+/* css for about, my projects, studies/skills */
+#about{
+   height: 660px;
+   grid-area:about;
+}
+
+#about .img{
+   float: left;
+   width: 50%;
+   background: url("IMAGES/me_backwhite.png") no-repeat center center/cover;
+   min-height: 100%;
+}
+
+#about .content{
+   float: right;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   padding: 30px 50px;
+   overflow: hidden;
+   font-size:19px;
+   background-color: aliceblue;
+   color: #0a043c;
+}
+
+#projects{
+   height: 660px;
+   background-color: aliceblue;
+   grid-area:projects;
+   
+}
+
+.container-projects{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.box {
+   background: url("IMAGES/proj.jpg") no-repeat center center/cover;
+   border: 1px solid black;
+   width: 150px;
+   height: 200px;
+}
+
+#projects h3 {
+   padding-top: 50px;
+    color:magenta;
+    text-align: center;
+    
+}
+
+#cv{
+   height: 660px;
+   grid-area:cv;
+}
+
+#cv .img2{
+   float: left;
+   width: 50%;
+   background: url("IMAGES/code.jpg") no-repeat center center/cover;
+   min-height: 100%;
+}
+
+#cv .content2{
+   float: right;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   padding: 30px 50px;
+   overflow: hidden;
+   font-size:19px;
+   background-color: aliceblue;
+   color: black;
+}
+
+#follow{
+   background: url("IMAGES/follow.png") no-repeat center center/cover;
+   height: 545px;
+   opacity:70%;
+   grid-area:follow;
+   
+}
+#container-follow{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#container-follow .boxf i{
+   padding-top: 340px;
+   font-size:50px;
+}
+
+/* Footer */
+#main-footer {
+   text-align: center;
+   background-color:snow;
+   color: magenta;
+   padding: 20px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    grid-area:footer;
+}
+
