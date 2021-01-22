@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Control Structures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Homework 6 - Javascript Control Structures</h1>
+    <!-- exercitiul 1 -->
+    <div class="ex1">
+      <br><h2>1. Using control structures, do the following:</h2>
+      <h3>a. display in the console the numbers from 1 to 20</h3>
+      <label for="n1">Introduceti n: </label>
+        <input id="n1" type="text">
+        <input type="button" value="Display" onclick="printNumber1to20();">
+        <p id="output1"></p>
+
+
+      <h3>b. display in the console the odd numbers from 1 to 20</h3>
+      <label for="n2">Introduceti n: </label>
+      <input id="n2" type="text">
+      <input type="button" value="Display" onclick="printOddNumber1to20();">
+      <p id="output2"></p><br>
+    </div>
+    <br><br>
+    <!-- exercitiul 2 -->
+    <div class="ex2">
+      <br><h2>2.For var list = [2, 3, 5, 7, 5, 3];</h2>
+      <h3>a. compute the sum of the elements of an array and display it in the console</h3>
+      <input type="button" value="Calculate" onclick="sumOfElementsFromAnArray();">
+      <p id="output3"></p><br>
+
+      <h3>b. compute the maximum of the elements of an array and display it in the console</h3>
+      <input type="button" value="Calculate Max" onclick="maxArr();">
+      <p id="output4"></p><br>
+
+      <h3>c. compute how many times a certain element appears in an array</h3>
+      <input type="button" value="Calculeaza" onclick="findElement();">
+      <p id="output5"></p><br>
+
+    </div>
+    <br><br>
+    <!-- exercitiul 3 -->
+    <div class="ex3">
+      <br><h2>Write a program to print Fibonacci series of the first 50 terms:<br>
+        0 1 1 2 3 5 8 13 24 .....</h2>
+        <label for="n3">Introduceti n: </label>
+      <input id="n3" type="text">
+      <input type="button" value="Find numbers" onclick="fiboN50();">
+      <p id="output6"></p><br>
+    </div>
+    <br><br>
+    <!-- exercitiul 4 -->
+    <div class="ex4">
+    <br><h2>4. Write a program that prints the numbers from 1 to 100.
+      But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”.
+      For numbers which are multiples of both three and five print “FizzBuzz”.</h2>
+      <label for="n4">Introduceti n: </label>
+      <input id="n4" type="text">
+      <input type="button" value="Display" onclick="printNumber1to100();">
+      <p id="output7"></p><br>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
