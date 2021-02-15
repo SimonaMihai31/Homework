@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!-- <style>
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+  </style> -->
+</head>
+<body>
+  <!-- Creati o pagina html, in care sa includeti elemente de javascript si css, care sa implementeze funcionalitatile necesare unei aplicatii de tipul lista de cumparaturi:
+ -->
+  <!-- Un formular de adaugare noi elemente in lista de cumparaturi:
+  formularul contine un input de tip text si un buton "Add item"
+  adaugarea elementelor noi se poate face atat la apasarea tastei enter cat si la apasarea butonului "Add item" -->
+  <!-- in coloana item description va fi afisat textul introdus de utilizator in lista, iar pe coloana action va fi afisat un buton "Mark as buyed"
+  butonul 'Mark as buyed" va adauga o clasa de css randului din tabel, ce va face textul sa apara taiat: "strikethrough"
+  deasupra listei ce afiseaza elementele adaugate de utilizator, adaugati 2 butoane ce vor sorta crescator si descrescator elementele listei -->
+  <div class="container">
+    <div class="content">
+      <h2 class= "title">Shopping List</h2>
+      <input type="text" id ="input1" required >
+      <button type="button" id="add">Add to List </button><br><br>
+      <button type="sort" id="sortAsc">Sort asc</button>
+      <button type="sort" id="sortDesc">Sort desc </button>
+      <!--Un tabel unde sunt afisate elementele adaugate in lista folosind formularul:
+        elementele vor fi afisate sub forma unui tabel cu 2 coloane: item description, action -->
+        <div class="items">
+        <table id="myTable">
+          <tr>
+             <th>Item description</th>
+             <th>Action</th>
+          </tr>
+        
+        </table>
+      </div>   
+    </div>
+  </div>
+    
+  <script src="app.js"></script>
+</body>
+</html>

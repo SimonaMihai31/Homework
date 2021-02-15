@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7 - JS DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Implement a Contact form component. Your form should have: 2 text inputs, 1 radio button, 1 text area, 1 submit button and an optional image on the right, just to make the form look a little better.
+     -->
+    <!--  formular de contact  -->
+    <br> <div id="contact-title"><h2>Feel free to Contact Us</h2></div><br>
+<div id="contact-container">
+    <div class="contact-content">
+        
+        <!-- formular de contact -->
+              <form class= "input">
+              <input type="text" id="first" placeholder="First Name" required=""><br>
+              <div id="firstNameError" class="error"></div>
+              <input type="text" id="last" placeholder="Last Name" required="" ><br>
+              <div id="lastNameError" class="error"></div>
+              <input type="text" id="email" placeholder="Your Email Address " required=""><br>
+              <div id="emailAddressError" class="error"></div>
+              <label>I have read the Privacy Policy and consent<br> to the processing of my personal data.</label><BR>
+              <input type="radio" id="yes-no" name="answer" value="yes" required>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="yes-no" name="answer" value="no">
+              <label for="no">No</label><br>
+              <textarea id="message" cols="20" rows="6" placeholder="Your message here...."></textarea><br>
+              <div id="messageError" class="error"></div>
+              <button type="send"><span id="submit">Submit</span>  </button>
+              </form>
+          <br><br>
+    </div>
+    <div class="img"></div>
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

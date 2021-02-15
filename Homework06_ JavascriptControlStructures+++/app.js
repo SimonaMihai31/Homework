@@ -45,7 +45,7 @@ function sumOfElementsFromAnArray() {
  }
  
  //ex2 / b. compute the maximum of the elements of an array and display it in the console
-//  
+ 
 function maxArr() {
     var arr =  [2, 3, 5, 7, 1, 5, 3];
     var max = 0;

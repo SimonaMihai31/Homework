@@ -1,0 +1,94 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ h2{
+     text-align:center;
+     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-style:italic;
+     color:magenta;
+ }
+
+ /* css for succes message*/
+ .succesMessage {
+     display: flex;
+     color:magenta;
+     font-style: italic;
+     text-align:center;
+     padding-bottom: 5px;
+     margin-bottom: 5px;
+ } 
+.checked-item {
+    color:magenta;
+    font-size :25px;
+    padding-right:20px;
+}
+.delete-item {
+    color:#0a043c;
+    font-size :25px;
+    padding-left:20px;
+}
+
+ /* css for contact form */
+#contact-container{
+    height: 480px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    padding:15px;
+    border:1px solid #0a043c; 
+
+}
+.contact-content{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.img {
+    float: right;
+    width: 50%;
+    background: url("img3.jpg") no-repeat center center/cover;
+    margin:auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+.contact-content label{
+    color:#0a043c;
+    font-size:15px;
+}
+.contact-content button{
+    background-color:magenta;
+    border:2px solid #0a043c;
+    border-radius: 2px;
+}
+
+.contact-content input{
+   border:2px solid #0a043c;
+}
+
+.contact-content textarea{
+   border:2px solid #0a043c;
+   background-color:aliceblue;
+}
+#submit {
+    padding:7px;
+}
+input {
+    background-color:aliceblue;
+}
+#firstNameError {
+    font-size:15px;
+    color:red;
+}
+#lastNameError {
+    font-size:15px;
+    color:red;
+}
+#emailAddressError {
+    font-size:15px;
+    color:red;
+}
