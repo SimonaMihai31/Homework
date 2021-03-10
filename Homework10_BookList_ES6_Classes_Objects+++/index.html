@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List using ES6 Classes and Objects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- 1. HTML - Create the structure of the page (Hint: the book list could be a table, and any new added book on the JS side could be an <tr> element). -->
+    <div class="container">
+        <div id="container-book">
+            <form action="" class="book" id="book">
+                <h2>Add New Book</h2>
+                <div id="first-input" class="book-item">
+                    <label for="book-title">Title</label>
+                    <input id="book-title" placeholder="Book title" type="text">
+                    <small>Error message</small>
+                </div>
+                <div class="book-item">
+                    <label for="author-name">Author</label>
+                    <input id="author-name" placeholder="Author" type="text">
+                    <small>Error message</small>
+                </div>
+                <div class="book-item">
+                    <label for="isbn">ISBN</label>
+                    <input id="isbn" type="number">
+                    <small>Error message</small>
+                    <button type="submit" >Submit</button>
+                </div>
+            </form>
+                <div class="items">
+                    <table id="myTable">
+                        <tbody>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>ISBN</th>
+                                <th>Option</th>
+                             </tr>
+                        </tbody>
+                      
+                    </table>
+                </div> 
+        </div>
+        <div class="container-image">
+            <img src="images/pic4.jpg" alt="" width= "310px" height="310px">
+        </div>
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
